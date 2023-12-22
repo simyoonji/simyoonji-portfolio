@@ -1,0 +1,67 @@
+header {
+    padding: 1em 20px;
+    box-sizing: border-box;
+    background-color: #202020;;
+}
+header > div {
+   
+}
+header > div::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+header div > h1 {
+    float: left;
+}
+header div > h1 > a {
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #dbe2f3;
+}
+header nav {
+   float: right;
+}
+header nav > ul {
+    display: flex;
+    line-height: 28px;
+}
+header nav > ul > li{
+    text-transform: uppercase;
+    padding-left: 50px;
+    box-sizing: border-box;    
+}
+header nav > ul > li > a {
+    position: relative;
+    display: block;
+    color: #dbe2f3;
+    font-size: 18px;
+    font-weight: bold;
+    
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+header nav > ul > li > a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    
+    left: 50%;
+    bottom: -5px;
+    background-color: pink;
+
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+header nav > ul > li:hover > a:after {
+    left: 0;
+    width: 100%;
+}
